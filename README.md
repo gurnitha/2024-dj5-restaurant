@@ -7,46 +7,58 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
 #### 1. Membuat venv
 
-	λ python --version
-	Python 3.12.1
-	λ pip --version
-	pip 24.1.1 
-	λ python -m venv venv312506 --promp dj5-resta
-	λ ls
-	README.md  venv312506/
+        λ python --version
+        Python 3.12.1
+        λ pip --version
+        pip 24.1.1 
+        λ python -m venv venv312506 --promp dj5-resta
+        λ ls
+        README.md  venv312506/
 
 
 #### 2. Menginstal django versi 5.0.6
 
-	λ venv312506\Scripts\activate.bat
+        λ venv312506\Scripts\activate.bat
 
-	(dj5-resta) λ pip install django==5.0.6
-	Collecting django==5.0.6
-	  ...
-	Successfully installed asgiref-3.8.1 django-5.0.6 sqlparse-0.5.0 tzdata-2024.1
+        (dj5-resta) λ pip install django==5.0.6
+        Collecting django==5.0.6
+        ...
+        Successfully installed asgiref-3.8.1 django-5.0.6 sqlparse-0.5.0 tzdata-2024.1
 
-	[notice] A new release of pip is available: 23.2.1 -> 24.1.2
-	[notice] To update, run: python.exe -m pip install --upgrade pip
+        [notice] A new release of pip is available: 23.2.1 -> 24.1.2
+        [notice] To update, run: python.exe -m pip install --upgrade pip
 
-	(dj5-resta) λ django-admin --version
-	5.0.6
+        (dj5-resta) λ django-admin --version
+        5.0.6
 
-	(dj5-resta) λ pip list
-	Package  Version
-	-------- -------
-	asgiref  3.8.1
-	Django   5.0.6
-	pip      23.2.1
-	sqlparse 0.5.0
-	tzdata   2024.1
+        (dj5-resta) λ pip list
+        Package  Version
+        -------- -------
+        asgiref  3.8.1
+        Django   5.0.6
+        pip      23.2.1
+        sqlparse 0.5.0
+        tzdata   2024.1
 
 
 #### 3. Meng-upgrade pip
 
-	(dj5-resta) λ python.exe -m pip install --upgrade pip
-	...
-	Successfully installed pip-24.1.2
+        (dj5-resta) λ python.exe -m pip install --upgrade pip
+        ...
+        Successfully installed pip-24.1.2
 
 
 
 ## 2. PROYEK DAN APLIKASI
+
+
+#### 1. Membuat proyek dengan nama 'config'
+
+        (dj5-resta) λ django-admin startproject config .
+
+        new file:   config/__init__.py
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
