@@ -12,3 +12,7 @@ def home_view(request):
 
 def about_view(request):
 	return render(request, "restauran/about.html")
+
+
+def menu_view(request):
+	return render(request, "restauran/menu.html")
