@@ -14,4 +14,5 @@ urlpatterns = [
     path("about/", views.about_view, name="about"),
     path("menu/", views.menu_view, name="menu"),
     path("reservasi/", views.reservasi_view, name="reservasi"),
+    path("kontak/", views.kontak_view, name="kontak"),
 ]

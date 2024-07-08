@@ -20,3 +20,7 @@ def menu_view(request):
 
 def reservasi_view(request):
 	return render(request, "restauran/reservasi.html")
+
+
+def kontak_view(request):
+	return render(request, "restauran/kontak.html")
