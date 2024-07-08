@@ -111,3 +111,13 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
 
 ## 3. PAGES: URLS, VIEWS, TEMPLATES
+
+
+#### 1. Membuat laman home
+
+        modified:   README.md
+        new file:   app/restauran/urls.py
+        modified:   app/restauran/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/restauran/index.html
