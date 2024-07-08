@@ -176,3 +176,9 @@ Membuat aplikasi restauran menggunakan Django versi 5
         modified:   app/restauran/urls.py
         modified:   app/restauran/views.py
         new file:   templates/restauran/kontak.html
+
+
+#### 10. Mengisi HTML template untuk laman kontak
+
+        modified:   README.md
+        modified:   templates/restauran/kontak.html
