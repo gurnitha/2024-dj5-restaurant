@@ -77,3 +77,18 @@ Membuat aplikasi restauran menggunakan Django versi 5
         new file:   app/restauran/models.py
         new file:   app/restauran/tests.py
         new file:   app/restauran/views.py
+
+
+#### 3. Membuat aplikasi blog
+
+        (dj5-resta) λ mkdir app\blog
+        (dj5-resta) λ django-admin startapp blog app\blog
+
+        modified:   README.md
+        new file:   app/blog/__init__.py
+        new file:   app/blog/admin.py
+        new file:   app/blog/apps.py
+        new file:   app/blog/migrations/__init__.py
+        new file:   app/blog/models.py
+        new file:   app/blog/tests.py
+        new file:   app/blog/views.py
