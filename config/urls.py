@@ -14,4 +14,7 @@ urlpatterns = [
 
     # blog
     path("", include("app.blog.urls", namespace="blog")),
+
+    # user
+    path("", include("app.user.urls", namespace="user")),
 ]

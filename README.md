@@ -197,3 +197,12 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
         modified:   README.md
         modified:   templates/blog/posts-list.html
+
+
+#### 13. Membuat laman register
+
+        modified:   README.md
+        new file:   app/user/urls.py
+        modified:   app/user/views.py
+        modified:   config/urls.py
+        new file:   templates/user/register.html
