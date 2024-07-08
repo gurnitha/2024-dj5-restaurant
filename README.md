@@ -121,3 +121,9 @@ Membuat aplikasi restauran menggunakan Django versi 5
         modified:   config/settings.py
         modified:   config/urls.py
         new file:   templates/restauran/index.html
+
+
+#### 2. Mengisi HTML template untuk laman home
+
+        modified:   README.md
+        modified:   templates/restauran/index.html
