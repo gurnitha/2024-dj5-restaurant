@@ -1,6 +1,7 @@
 # 2024-dj5-restaurant
 Membuat aplikasi restauran menggunakan Django versi 5
-
+Github:git@github.com:gurnitha/2024-dj5-restaurant.git
+Lokal:E:\_WORKSPACE\2024\django\Mahmoud_Ahmed
 
 ## 1. SETUP
 
@@ -260,3 +261,13 @@ Membuat aplikasi restauran menggunakan Django versi 5
         modified:   templates/restauran/reservasi.html
         modified:   templates/user/login.html
         modified:   templates/user/register.html
+
+
+#### 4. Membuat dan menggunakan base template dan block tags
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/blog/posts-list.html
+        modified:   templates/restauran/about.html
+        modified:   templates/restauran/index.html
+        modified:   templates/restauran/menu.html
