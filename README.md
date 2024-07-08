@@ -62,3 +62,18 @@ Membuat aplikasi restauran menggunakan Django versi 5
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+#### 2. Membuat aplikasi restauran
+
+        (dj5-resta) λ mkdir app\restauran
+        (dj5-resta) λ django-admin startapp restauran app\restauran
+
+        modified:   README.md
+        new file:   app/restauran/__init__.py
+        new file:   app/restauran/admin.py
+        new file:   app/restauran/apps.py
+        new file:   app/restauran/migrations/__init__.py
+        new file:   app/restauran/models.py
+        new file:   app/restauran/tests.py
+        new file:   app/restauran/views.py
