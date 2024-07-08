@@ -46,3 +46,7 @@ Membuat aplikasi restauran menggunakan Django versi 5
 	(dj5-resta) λ python.exe -m pip install --upgrade pip
 	...
 	Successfully installed pip-24.1.2
+
+
+
+## 2. PROYEK DAN APLIKASI
