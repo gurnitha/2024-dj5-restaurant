@@ -1,5 +1,5 @@
 <!-- src/templates/user/login.html -->
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,142 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto | Login</title>
-    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="/static/css/blog.css" rel="stylesheet">
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'rathan/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'rathan/fonts/google-fonts.css' %}" rel="stylesheet">
+    <link href="{% static 'rathan/css/blog.css' %}" rel="stylesheet">
+    <link href="{% static 'rathan/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'rathan/css/font-awesome.min.css' %}">
 </head>
 <body>
     <div class="container">
-
-        <!-- header -->
-        <header class="blog-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
-                    <a class="blog-header-logo text-dark" href="/">Django Blog</a>
-                </div>
-                <div class="col-4">
-                    <form action="/blog/search/" method="GET">
-                        <div class="input-group">
-                            <input 
-                                class="form-control" 
-                                type="text" 
-                                name="keyword" 
-                                value="" 
-                                placeholder="Enter search term..." 
-                                aria-label="Enter search term..." 
-                                aria-describedby="button-search" />
-                            <button 
-                                type="submit" 
-                                class="btn btn-warning" 
-                                id="button-search" 
-                                type="button">Go!</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                    
-                        <a class="btn btn-sm btn-warning" 
-                            href="/user/login/">Login</a> &nbsp;
-                        <a class="btn btn-sm btn-outline-secondary" 
-                            href="/user/register/">Register</a>
-                    
-                </div>
-                
-            </div>
-        </header>
-        <!-- header end -->
-
-        <!-- navbar -->
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="/">Home</a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/1/">
-                    Politik
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/2/">
-                    Ekonomi
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/3/">
-                    Sain
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/4/">
-                    Olahraga
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/5/">
-                    Kesehatan
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/6/">
-                    Bisnis
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/7/">
-                    Teknologi
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/8/">
-                    Budaya
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/9/">
-                    Perkotaan
-                </a>
-                
-            </nav>
-        </div>
-        <!-- navbar end -->
-
-        <!-- hero featued post -->
         
-        <!-- hero featued post end -->
-
         <!-- content -->
-        
-
-<h3 class="text-center">Login</h3>
-
-<form 
-	action="/user/login/" 
-	method="POST" style="width:500px; margin:auto;">
-	<input type="hidden" name="csrfmiddlewaretoken" value="kUHHFNq2lZjGqfdJzEEd8UfFAxRjYtKE3gUdTFU5idL97wWKXsERcr3tpvoBGVZm">
-
-    
-
-<div id="div_id_username" class="form-group"> <label for="id_username" class=" requiredField">
-                Nama pengguna<span class="asteriskField">*</span> </label> <div> <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" class="textinput form-control" required id="id_username"> </div> </div> <div id="div_id_password" class="form-group"> <label for="id_password" class=" requiredField">
-                Sandi<span class="asteriskField">*</span> </label> <div> <input type="password" name="password" autocomplete="current-password" class="passwordinput form-control" required id="id_password"> </div> </div>
-
-
-    <button type="submit" class="btn btn-warning">Login</button>
-</form>
-
+        <h3 class="text-center">Login</h3>
+        <form 
+            action="/user/login/" 
+            method="POST" style="width:500px; margin:auto;">
+            <input type="hidden" name="csrfmiddlewaretoken" value="kUHHFNq2lZjGqfdJzEEd8UfFAxRjYtKE3gUdTFU5idL97wWKXsERcr3tpvoBGVZm">
+            <div id="div_id_username" class="form-group">
+                <label for="id_username" class=" requiredField">
+                Nama pengguna<span class="asteriskField">*</span> </label> 
+                <div> <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" class="textinput form-control" required id="id_username"> </div>
+            </div>
+            <div id="div_id_password" class="form-group">
+                <label for="id_password" class=" requiredField">
+                Sandi<span class="asteriskField">*</span> </label> 
+                <div> <input type="password" name="password" autocomplete="current-password" class="passwordinput form-control" required id="id_password"> </div>
+            </div>
+            <button type="submit" class="btn btn-warning">Login</button>
+        </form>
         <!-- content end -->
-
     </div>
-
     <!-- footer -->
     <footer class="blog-footer">
         <hr />
         <p style="text-align: center;">Developed with <span style="color:red;">love</span> by <span style="color:#0056B3;">ING</span> in <a href="#">Practical Skill_Sets</a></p>
     </footer>
     <!-- footer end -->
-
 </body>
 </html>

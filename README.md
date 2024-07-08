@@ -244,3 +244,19 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
         modified:   README.md
         modified:   config/settings.py
+
+
+#### 3. Load static files pada semua laman
+
+        modified:   README.md
+        modified:   templates/blog/posts-list.html
+        new file:   templates/partials/menu-list.html
+        new file:   templates/partials/reviews.html
+        new file:   templates/partials/specialties.html
+        modified:   templates/restauran/about.html
+        modified:   templates/restauran/index.html
+        modified:   templates/restauran/kontak.html
+        modified:   templates/restauran/menu.html
+        modified:   templates/restauran/reservasi.html
+        modified:   templates/user/login.html
+        modified:   templates/user/register.html

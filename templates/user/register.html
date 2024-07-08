@@ -1,5 +1,5 @@
 <!-- src/templates/user/register.html -->
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,134 +15,52 @@
 </head>
 <body>
     <div class="container">
-
-        <!-- header -->
-        <header class="blog-header py-3">
-            <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
-                    <a class="blog-header-logo text-dark" href="/">Django Blog</a>
-                </div>
-                <div class="col-4">
-                    <form action="/blog/search/" method="GET">
-                        <div class="input-group">
-                            <input 
-                                class="form-control" 
-                                type="text" 
-                                name="keyword" 
-                                value="" 
-                                placeholder="Enter search term..." 
-                                aria-label="Enter search term..." 
-                                aria-describedby="button-search" />
-                            <button 
-                                type="submit" 
-                                class="btn btn-warning" 
-                                id="button-search" 
-                                type="button">Go!</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                    
-                        <a class="btn btn-sm btn-warning" 
-                            href="/user/login/">Login</a> &nbsp;
-                        <a class="btn btn-sm btn-outline-secondary" 
-                            href="/user/register/">Register</a>
-                    
-                </div>
-                
-            </div>
-        </header>
-        <!-- header end -->
-
-        <!-- navbar -->
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="/">Home</a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/1/">
-                    Politik
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/2/">
-                    Ekonomi
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/3/">
-                    Sain
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/4/">
-                    Olahraga
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/5/">
-                    Kesehatan
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/6/">
-                    Bisnis
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/7/">
-                    Teknologi
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/8/">
-                    Budaya
-                </a>
-                
-                <a class="p-2 text-muted" 
-                    href="/blogs/9/">
-                    Perkotaan
-                </a>
-                
-            </nav>
-        </div>
-        <!-- navbar end -->
-
         <!-- hero featued post -->
-        
         <!-- hero featued post end -->
-
         <!-- content -->
-        
-
-<h3 class="text-center">Register</h3>
-<form action="" method="POST" style="width:500px; margin:auto;">
-    <input type="hidden" name="csrfmiddlewaretoken" value="kct8fbUEpIewMPu6eWdKc15gvtxo7a1d3yGEt3oHmWGZt6d7CKdogyT4kr4GPCgV">
-
-    
-
-<div id="div_id_email" class="form-group"> <label for="id_email" class="">
+        <h3 class="text-center">Register</h3>
+        <form action="" method="POST" style="width:500px; margin:auto;">
+            <input type="hidden" name="csrfmiddlewaretoken" value="kct8fbUEpIewMPu6eWdKc15gvtxo7a1d3yGEt3oHmWGZt6d7CKdogyT4kr4GPCgV">
+            <div id="div_id_email" class="form-group">
+                <label for="id_email" class="">
                 Alamat email
-            </label> <div> <input type="email" name="email" maxlength="254" class="emailinput form-control" id="id_email"> </div> </div> <div id="div_id_username" class="form-group"> <label for="id_username" class=" requiredField">
-                Nama pengguna<span class="asteriskField">*</span> </label> <div> <input type="text" name="username" maxlength="150" autofocus class="textinput form-control" required aria-describedby="id_username_helptext" id="id_username"> <small id="hint_id_username" class="form-text text-muted">Wajib. 150 karakter atau sedikit. Hanya huruf, angka, dan @/./+/-/_.</small> </div> </div> <div id="div_id_password1" class="form-group"> <label for="id_password1" class=" requiredField">
-                Sandi<span class="asteriskField">*</span> </label> <div> <input type="password" name="password1" autocomplete="new-password" class="passwordinput form-control" required aria-describedby="id_password1_helptext" id="id_password1"> <small id="hint_id_password1" class="form-text text-muted"><ul><li>Sandi anda tidak dapat terlalu mirip terhadap informasi pribadi anda.</li><li>Kata sandi Anda harus memuat setidaknya 8 karakter.</li><li>Sandi anda tidak dapat berupa sandi umum digunakan.</li><li>Sandi anda tidak bisa sepenuhnya numerik.</li></ul></small> </div> </div> <div id="div_id_password2" class="form-group"> <label for="id_password2" class=" requiredField">
-                Konfirmasi sandi<span class="asteriskField">*</span> </label> <div> <input type="password" name="password2" autocomplete="new-password" class="passwordinput form-control" required aria-describedby="id_password2_helptext" id="id_password2"> <small id="hint_id_password2" class="form-text text-muted">Masukkan sandi yang sama seperti sebelumnya, untuk verifikasi.</small> </div> </div>
-
-    
-    <button type="submit" class="btn btn-warning">Submit</button>
-</form>
-
+                </label> 
+                <div> <input type="email" name="email" maxlength="254" class="emailinput form-control" id="id_email"> </div>
+            </div>
+            <div id="div_id_username" class="form-group">
+                <label for="id_username" class=" requiredField">
+                Nama pengguna<span class="asteriskField">*</span> </label> 
+                <div> <input type="text" name="username" maxlength="150" autofocus class="textinput form-control" required aria-describedby="id_username_helptext" id="id_username"> <small id="hint_id_username" class="form-text text-muted">Wajib. 150 karakter atau sedikit. Hanya huruf, angka, dan @/./+/-/_.</small> </div>
+            </div>
+            <div id="div_id_password1" class="form-group">
+                <label for="id_password1" class=" requiredField">
+                Sandi<span class="asteriskField">*</span> </label> 
+                <div>
+                    <input type="password" name="password1" autocomplete="new-password" class="passwordinput form-control" required aria-describedby="id_password1_helptext" id="id_password1"> 
+                    <small id="hint_id_password1" class="form-text text-muted">
+                        <ul>
+                            <li>Sandi anda tidak dapat terlalu mirip terhadap informasi pribadi anda.</li>
+                            <li>Kata sandi Anda harus memuat setidaknya 8 karakter.</li>
+                            <li>Sandi anda tidak dapat berupa sandi umum digunakan.</li>
+                            <li>Sandi anda tidak bisa sepenuhnya numerik.</li>
+                        </ul>
+                    </small>
+                </div>
+            </div>
+            <div id="div_id_password2" class="form-group">
+                <label for="id_password2" class=" requiredField">
+                Konfirmasi sandi<span class="asteriskField">*</span> </label> 
+                <div> <input type="password" name="password2" autocomplete="new-password" class="passwordinput form-control" required aria-describedby="id_password2_helptext" id="id_password2"> <small id="hint_id_password2" class="form-text text-muted">Masukkan sandi yang sama seperti sebelumnya, untuk verifikasi.</small> </div>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
         <!-- content end -->
-
     </div>
-
     <!-- footer -->
     <footer class="blog-footer">
         <hr />
         <p style="text-align: center;">Developed with <span style="color:red;">love</span> by <span style="color:#0056B3;">ING</span> in <a href="#">Practical Skill_Sets</a></p>
     </footer>
     <!-- footer end -->
-
 </body>
 </html>
