@@ -225,3 +225,7 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
         modified:   README.md
         modified:   templates/user/login.html
+
+
+
+## 4. STATIC FILES
