@@ -229,3 +229,12 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
 
 ## 4. STATIC FILES
+
+
+#### 1. Mengisi static files
+
+        modified:   README.md
+
+        Note: 
+
+        Static files are ignored by git
