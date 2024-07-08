@@ -16,3 +16,7 @@ def about_view(request):
 
 def menu_view(request):
 	return render(request, "restauran/menu.html")
+
+
+def reservasi_view(request):
+	return render(request, "restauran/reservasi.html")

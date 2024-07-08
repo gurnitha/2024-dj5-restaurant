@@ -143,7 +143,7 @@ Membuat aplikasi restauran menggunakan Django versi 5
         modified:   templates/restauran/about.html
 
 
-#### 5. Mengisi HTML template untuk laman menu
+#### 5. Membuat laman menu
 
         modified:   app/restauran/urls.py
         modified:   app/restauran/views.py
@@ -154,3 +154,11 @@ Membuat aplikasi restauran menggunakan Django versi 5
 
         modified:   README.md
         modified:   templates/restauran/menu.html
+
+
+#### 7. Membuat laman reservasi
+
+        modified:   README.md
+        modified:   app/restauran/urls.py
+        modified:   app/restauran/views.py
+        new file:   templates/restauran/reservasi.html
