@@ -219,3 +219,9 @@ Membuat aplikasi restauran menggunakan Django versi 5
         modified:   app/user/urls.py
         modified:   app/user/views.py
         new file:   templates/user/login.html
+
+
+#### 16. Mengisi HTML template untuk laman login
+
+        modified:   README.md
+        modified:   templates/user/login.html
