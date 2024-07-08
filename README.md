@@ -39,3 +39,10 @@ Membuat aplikasi restauran menggunakan Django versi 5
 	pip      23.2.1
 	sqlparse 0.5.0
 	tzdata   2024.1
+
+
+#### 3. Meng-upgrade pip
+
+	(dj5-resta) λ python.exe -m pip install --upgrade pip
+	...
+	Successfully installed pip-24.1.2
