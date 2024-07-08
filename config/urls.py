@@ -11,4 +11,7 @@ urlpatterns = [
 
     # restauran
     path("", include("app.restauran.urls", namespace="restauran")),
+
+    # blog
+    path("", include("app.blog.urls", namespace="blog")),
 ]
