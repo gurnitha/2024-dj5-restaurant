@@ -107,3 +107,7 @@ Membuat aplikasi restauran menggunakan Django versi 5
         new file:   app/user/models.py
         new file:   app/user/tests.py
         new file:   app/user/views.py
+
+
+
+## 3. PAGES: URLS, VIEWS, TEMPLATES
