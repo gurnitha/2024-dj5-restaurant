@@ -191,3 +191,9 @@ Membuat aplikasi restauran menggunakan Django versi 5
         modified:   app/blog/views.py
         modified:   config/urls.py
         new file:   templates/blog/posts-list.html
+
+
+#### 12. Mengisi HTML template untuk laman posts
+
+        modified:   README.md
+        modified:   templates/blog/posts-list.html
